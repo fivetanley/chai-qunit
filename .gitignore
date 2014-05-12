@@ -3,3 +3,4 @@ bower_components
 *.swo
 *.swp
 tmp
+sauce_connect.log
