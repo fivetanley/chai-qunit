@@ -57,4 +57,4 @@ MIT. See the `LICENSE` file included with this repository.
 
 <!-- links -->
 [chai]: http://chaijs.com
-[chai]: http://chaijs.com/api/assert/
+[chai-docs]: http://chaijs.com/api/assert/
