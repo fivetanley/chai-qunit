@@ -1,4 +1,4 @@
-Chai QUnit
+Chai QUnit [![Build Status](https://travis-ci.org/fivetanley/chai-qunit.svg?branch=master)](https://travis-ci.org/fivetanley/chai-qunit)
 ==========
 
 Chai-QUnit is a layer on top of QUnit using the [chai][chai] assertion library.
