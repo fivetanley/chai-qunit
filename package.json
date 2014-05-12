@@ -15,8 +15,7 @@
     "broccoli": "~0.11.0",
     "karma-qunit": "^0.1.1",
     "karma-sauce-launcher": "^0.2.8",
-    "grunt-karma": "^0.8.3",
-    "qunitjs": "^1.12.0"
+    "grunt-karma": "^0.8.3"
   },
   "main": "dist/commonjs/chai-qunit.js",
   "directories": {
@@ -24,7 +23,7 @@
   },
   "dependencies": {
     "chai": "^1.9.1",
-    "qunit": "^0.6.3"
+    "qunitjs": "~1.12.0"
   },
   "scripts": {
     "test": "grunt"
