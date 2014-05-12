@@ -1,0 +1,1 @@
+test: grunt && grunt karma

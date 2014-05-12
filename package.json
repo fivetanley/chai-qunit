@@ -1,0 +1,51 @@
+{
+  "name": "chai-qunit",
+  "description": "chai integrations for qunit",
+  "version": "0.0.1",
+  "devDependencies": {
+    "broccoli-cli": "~0.0.1",
+    "bower": "~1.3.3",
+    "karma": "^0.12.15",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt": "^0.4.4",
+    "grunt-broccoli": "~0.2.1",
+    "broccoli-dist-es6-module": "~0.2.0",
+    "matchdep": "^0.3.0",
+    "grunt-contrib-clean": "^0.5.0",
+    "broccoli": "~0.11.0",
+    "karma-qunit": "^0.1.1",
+    "karma-sauce-launcher": "^0.2.8",
+    "grunt-karma": "^0.8.3",
+    "qunitjs": "^1.12.0"
+  },
+  "main": "dist/commonjs/chai-qunit.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^1.9.1",
+    "qunit": "^0.6.3"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fivetanley/chai-qunit.js"
+  },
+  "keywords": [
+    "chai",
+    "qunit",
+    "tests",
+    "testing",
+    "test",
+    "matchers",
+    "helpers"
+  ],
+  "author": "Stanley Stuart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fivetanley/chai-qunit.js/issues"
+  },
+  "homepage": "https://github.com/fivetanley/chai-qunit.js"
+}
