@@ -4,7 +4,7 @@ before_script:
   - npm install
   - bower install
   - npm install -g grunt-cli
-script: grunt && grunt karma
+script: grunt && grunt test
 env:
   global:
   - secure: CjY4dTA1mDJDOGP6Bn9qKnSjOSYZoCVs2c6KHqv9b4GJZAkOKdPMYmpZv9lgR4f4rptm3VAIDVYVxxKLCEfdlyxqxxefo18NCx8rJx7dLqFb7EmbGMfo+HKpeInBezK3aLdkJOhN+4EuQ21A8AwfASMEniOm6IQKqQIdvfjhINM=

@@ -107,5 +107,10 @@ module.exports = function(grunt){
     karma: karmaConfig,
   });
 
+  var browserTasks = Object.keys(karmaConfig).filter(function(taskName){
+    return /browsers/.exec(taskName)
+  }).map(function(t){ return 'karma:' + t });
+
   grunt.registerTask('default', [ 'clean', 'broccoli:dist:build' ]);
+  grunt.registerTask('test', browserTasks);
 };
