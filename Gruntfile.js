@@ -107,5 +107,5 @@ module.exports = function(grunt){
     karma: karmaConfig,
   });
 
-  grunt.registerTask('default', [ 'clean', 'broccoli:dist:build', 'karma' ]);
+  grunt.registerTask('default', [ 'clean', 'broccoli:dist:build' ]);
 };
