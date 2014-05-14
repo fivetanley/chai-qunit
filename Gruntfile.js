@@ -112,7 +112,8 @@ module.exports = function(grunt){
         commitMessage: 'Release %s',
         tagName: '%s',
         tagAnnotation: 'Relase %s',
-        buildCommand: 'grunt && npm test'
+        buildCommand: 'grunt && npm test',
+        distFiles: [ 'lib/**/*.js', 'dist/**/*', 'package.json', 'bower.json' ]
       }
     }
   });
