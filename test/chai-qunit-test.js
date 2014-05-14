@@ -208,4 +208,12 @@
     includeMembers([1, 2, 3], [1, 2]);
   });
 
+  test("matches", function(){
+    matches("ohi", /ohi/);
+  });
+
+  test("notMatches", function(){
+    notMatches("ohi", /obye/);
+  });
+
 })();

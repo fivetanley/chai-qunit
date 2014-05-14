@@ -14,7 +14,9 @@ or
 Then include it using a script tag:
 
 ```html
-<script type="text/javascript" src="/path/to/bower_components/chai-qunit/dist/chai-qunit.js">
+<script type="text/javascript" src="/path/to/bower_components/chai/chai.js"></script>
+<script type="text/javascript" src="/path/to/bower_components/chai-qunit/dist/main.js"></script>
+<script>
   chaiQUnit.globalize();
 </script>
 ```
@@ -37,7 +39,7 @@ and a robust plugin system for creating your own.
 See the [Chai Docs][chai-docs] for more usage information, but this implementation
 currently uses the `assert` syntax exposed as globals (`expect` and `should`
 are planned to be supported soon). For example, with chai standalone, you would
-say `assert.matches("hello", /hello/i)`. In chai-qunit, you would say `matches("hello", /hello/i)`.
+say `assert.match("hello", /hello/i)`. In chai-qunit, you would say `match("hello", /hello/i)`.
 
 ## Test Example
 
@@ -47,7 +49,7 @@ module("My Module");
 
 test("title matches something", function(){
   var title = "A Book about Nothing";
-  matches(title, /book/i);
+  match(title, /book/i);
 });
 ```
 

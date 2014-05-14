@@ -84,17 +84,25 @@ define("chai-qunit",
     }
 
     function globalize(){
-      for (var i = 0, len = CHAI_FUNCTIONS.length; i < len; i++) {
+      var i, len;
+      for (i = 0, len = CHAI_FUNCTIONS.length; i < len; i++) {
         fn = CHAI_FUNCTIONS[i];
         if (fn === "throw") continue;
         window[fn] = chaiQUnit[fn];
       }
+      window.matches    = chaiQUnit.matches;
+      window.notMatches = chaiQUnit.notMatches;
     }
 
     for (var i = 0, len = CHAI_FUNCTIONS.length; i < len; i++) {
       var fn = CHAI_FUNCTIONS[i];
       chaiQUnit[fn] = createChaiAlias(fn);
     }
+
+    // Custom Aliases
+
+    chaiQUnit.matches = chaiQUnit.match;
+    chaiQUnit.notMatches = chaiQUnit.notMatch;
 
     chaiQUnit.__createChaiAlias__ = createChaiAlias;
     chaiQUnit.globalize = globalize;
@@ -151,6 +159,8 @@ define("chai-qunit",
     var closeTo            = chaiQUnit.closeTo;
     var sameMembers        = chaiQUnit.sameMembers;
     var includeMembers     = chaiQUnit.includeMembers;
+    var matches            = chaiQUnit.matches;
+    var notMatches         = chaiQUnit.notMatches;
 
     __exports__["default"] = chaiQUnit;
     __exports__.globalize = globalize;
@@ -205,4 +215,6 @@ define("chai-qunit",
     __exports__.closeTo = closeTo;
     __exports__.sameMembers = sameMembers;
     __exports__.includeMembers = includeMembers;
+    __exports__.matches = matches;
+    __exports__.notMatches = notMatches;
   });
