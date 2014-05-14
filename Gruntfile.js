@@ -105,6 +105,14 @@ module.exports = function(grunt){
       }
     },
     karma: karmaConfig,
+
+    'release-it': {
+      pkgFiles: [ 'package.json', 'bower.json' ],
+      commitMessage: 'Release %s',
+      tagName: '%s',
+      tagAnnotation: 'Relase %s',
+      buildCommand: 'grunt && npm test'
+    }
   });
 
   var browserTasks = Object.keys(karmaConfig).filter(function(taskName){
