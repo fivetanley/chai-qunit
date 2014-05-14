@@ -113,7 +113,7 @@ module.exports = function(grunt){
         tagName: '%s',
         tagAnnotation: 'Relase %s',
         buildCommand: 'grunt && npm test',
-        distFiles: [ 'dist/**/*', 'package.json', 'bower.json' ]
+        distFiles: [ 'lib/**/*.js', 'dist/**/*', 'package.json', 'bower.json' ]
       }
     }
   });
