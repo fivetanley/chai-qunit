@@ -28,7 +28,7 @@
     "qunitjs": "~1.12.0"
   },
   "scripts": {
-    "test": "karma run --single-run=true",
+    "test": "karma start --single-run=true",
     "build": "grunt"
   },
   "repository": {

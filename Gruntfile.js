@@ -107,11 +107,13 @@ module.exports = function(grunt){
     karma: karmaConfig,
 
     'release-it': {
-      pkgFiles: [ 'package.json', 'bower.json' ],
-      commitMessage: 'Release %s',
-      tagName: '%s',
-      tagAnnotation: 'Relase %s',
-      buildCommand: 'grunt && npm test'
+      options: {
+        pkgFiles: [ 'package.json', 'bower.json' ],
+        commitMessage: 'Release %s',
+        tagName: '%s',
+        tagAnnotation: 'Relase %s',
+        buildCommand: 'grunt && npm test'
+      }
     }
   });
 
