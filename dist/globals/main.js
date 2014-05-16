@@ -82,17 +82,25 @@ function tryChaiFunction(chaiFn){
 }
 
 function globalize(){
-  for (var i = 0, len = CHAI_FUNCTIONS.length; i < len; i++) {
+  var i, len;
+  for (i = 0, len = CHAI_FUNCTIONS.length; i < len; i++) {
     fn = CHAI_FUNCTIONS[i];
     if (fn === "throw") continue;
     window[fn] = chaiQUnit[fn];
   }
+  window.matches    = chaiQUnit.matches;
+  window.notMatches = chaiQUnit.notMatches;
 }
 
 for (var i = 0, len = CHAI_FUNCTIONS.length; i < len; i++) {
   var fn = CHAI_FUNCTIONS[i];
   chaiQUnit[fn] = createChaiAlias(fn);
 }
+
+// Custom Aliases
+
+chaiQUnit.matches = chaiQUnit.match;
+chaiQUnit.notMatches = chaiQUnit.notMatch;
 
 chaiQUnit.__createChaiAlias__ = createChaiAlias;
 chaiQUnit.globalize = globalize;
@@ -149,6 +157,8 @@ var operator           = chaiQUnit.operator;
 var closeTo            = chaiQUnit.closeTo;
 var sameMembers        = chaiQUnit.sameMembers;
 var includeMembers     = chaiQUnit.includeMembers;
+var matches            = chaiQUnit.matches;
+var notMatches         = chaiQUnit.notMatches;
 
 exports["default"] = chaiQUnit;
 exports.globalize = globalize;
@@ -203,6 +213,8 @@ exports.operator = operator;
 exports.closeTo = closeTo;
 exports.sameMembers = sameMembers;
 exports.includeMembers = includeMembers;
+exports.matches = matches;
+exports.notMatches = notMatches;
 },{}]},{},[1])
 (1)
 });
