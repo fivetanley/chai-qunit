@@ -1,6 +1,6 @@
 {
   "name": "chai-qunit",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "dist/globals/chai-qunit.js",
   "dependencies": {
     "qunit": "~1.14.0",
