@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fivetanley/chai-qunit.js"
+    "url": "https://github.com/fivetanley/chai-qunit"
   },
   "keywords": [
     "chai",
@@ -47,7 +47,7 @@
   "author": "Stanley Stuart",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fivetanley/chai-qunit.js/issues"
+    "url": "https://github.com/fivetanley/chai-qunit/issues"
   },
-  "homepage": "https://github.com/fivetanley/chai-qunit.js"
+  "homepage": "https://github.com/fivetanley/chai-qunit"
 }
